@@ -1,0 +1,26 @@
+﻿# Circle clean URLs + basic hardening (subfolder-aware)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /hellocircle.net/
+
+    # Prevent direct access to .php URLs (redirect to clean URL)
+    RewriteCond %{THE_REQUEST} \s/+hellocircle\.net/([A-Za-z0-9-]+)\.php[\s?] [NC]
+    RewriteRule ^ /hellocircle.net/%1 [R=301,L]
+
+    # Skip existing files/directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Map clean URLs to .php
+    RewriteRule ^([A-Za-z0-9-]+)/?$ $1.php [L]
+
+    # Homepage
+    RewriteRule ^$ index.php [L]
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Default charset
+AddDefaultCharset UTF-8
