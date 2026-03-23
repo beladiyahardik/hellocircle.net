@@ -36,6 +36,7 @@ if ($base_path === '' || $base_path === '/') {
     <meta name="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
     <meta name="twitter:image" content="<?php echo htmlspecialchars($page_og_image); ?>">
+    <link rel="icon" type="image/png" href="<?php echo $base_path; ?>/favicon.png">
 
     <!-- Bootstrap 5 CSS (jsDelivr) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
