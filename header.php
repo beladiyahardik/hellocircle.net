@@ -106,6 +106,23 @@ if ($base_path === '' || $base_path === '/') {
         .quote-card {
             border-left: 4px solid rgba(24, 119, 242, 0.4);
         }
+        .persona-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 0.75rem;
+        }
+        .brand-badge {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(24, 119, 242, 0.12);
+            border: 1px solid rgba(24, 119, 242, 0.2);
+            color: var(--circle-primary);
+        }
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">

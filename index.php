@@ -28,6 +28,13 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
             <div class="col-lg-6">
+                <div class="mb-4">
+                    <img
+                        src="https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?q=80&w=1200&auto=format&fit=crop"
+                        class="img-fluid rounded-4 card-shadow"
+                        alt="Friends sharing memories in a private group"
+                    >
+                </div>
                 <div class="bg-white rounded-4 p-4 card-shadow">
                     <h5 class="fw-bold"><i class="fa-solid fa-users text-primary me-2"></i>Your Circle at a glance</h5>
                     <p class="text-muted">Think of Circle as the best app for friend group memories and planning.</p>
@@ -263,7 +270,11 @@ include __DIR__ . '/header.php';
                         <div class="icon-pill mb-3"><i class="fa-solid fa-graduation-cap"></i></div>
                         <h5 class="fw-bold">College friends</h5>
                         <p class="text-muted">Keep memories and plans together through every semester.</p>
-                        <div class="small text-muted">Image placeholder</div>
+                        <img
+                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                            class="persona-image mt-3"
+                            alt="College friends hanging out together"
+                        >
                     </div>
                 </div>
             </div>
@@ -273,7 +284,11 @@ include __DIR__ . '/header.php';
                         <div class="icon-pill mb-3"><i class="fa-solid fa-house-user"></i></div>
                         <h5 class="fw-bold">Roommates</h5>
                         <p class="text-muted">Plan chores, bills, and hangouts without messy threads.</p>
-                        <div class="small text-muted">Image placeholder</div>
+                        <img
+                            src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop"
+                            class="persona-image mt-3"
+                            alt="Roommates in a shared apartment"
+                        >
                     </div>
                 </div>
             </div>
@@ -283,7 +298,11 @@ include __DIR__ . '/header.php';
                         <div class="icon-pill mb-3"><i class="fa-solid fa-suitcase-rolling"></i></div>
                         <h5 class="fw-bold">Trips</h5>
                         <p class="text-muted">Itineraries, polls, and photos in one private place.</p>
-                        <div class="small text-muted">Image placeholder</div>
+                        <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+                            class="persona-image mt-3"
+                            alt="Friends on a group trip outdoors"
+                        >
                     </div>
                 </div>
             </div>
@@ -293,7 +312,11 @@ include __DIR__ . '/header.php';
                         <div class="icon-pill mb-3"><i class="fa-solid fa-baby"></i></div>
                         <h5 class="fw-bold">Young families</h5>
                         <p class="text-muted">Share milestones without posting to the public.</p>
-                        <div class="small text-muted">Image placeholder</div>
+                        <img
+                            src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1200&auto=format&fit=crop"
+                            class="persona-image mt-3"
+                            alt="Family sharing moments together"
+                        >
                     </div>
                 </div>
             </div>
@@ -553,7 +576,7 @@ include __DIR__ . '/header.php';
     }
   ]
 }
-</script>\n\n<?php include __DIR__ . '/footer.php'; ?>
+</script><?php include __DIR__ . '/footer.php'; ?>
 
 
 
