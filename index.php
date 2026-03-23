@@ -10,7 +10,7 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
-                <p class="tagline mb-2">Circle – The private social home for your real life.</p>
+                <p class="tagline mb-2">Circle - The private social home for your real life.</p>
                 <h1 class="display-5 fw-bold">A private social network for real-life friends, not followers.</h1>
                 <p class="lead text-muted mt-3">Circle is a private social app for friends, families, roommates, and trips. It keeps your posts in order, your plans in one place, and your memories easy to find. No ads. No algorithm. No public pressure.</p>
                 <ul class="list-unstyled mt-4">
@@ -57,7 +57,7 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end mb-4">
             <div>
-                <p class="tagline">Circle – The private social home for your real life.</p>
+                <p class="tagline">Circle - The private social home for your real life.</p>
                 <h2 class="fw-bold">Why Circle beats WhatsApp, Instagram & Facebook for your real-life groups</h2>
             </div>
             <a class="btn btn-outline-secondary" href="<?php echo $base_path; ?>/comparison">See the full comparison</a>
@@ -195,7 +195,7 @@ include __DIR__ . '/header.php';
 <section class="section-padding">
     <div class="container">
         <div class="text-center mb-5">
-            <p class="tagline">Circle – The private social home for your real life.</p>
+            <p class="tagline">Circle - The private social home for your real life.</p>
             <h2 class="fw-bold">Everything your close circle needs in one private space</h2>
             <p class="text-muted">Simple features that feel natural, not noisy.</p>
         </div>

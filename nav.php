@@ -20,11 +20,8 @@ if ($current_slug === '' || $current_slug === 'index.php') {
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container">
-        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="<?php echo $base_path !== '' ? $base_path . '/' : './'; ?>">
-            <span class="brand-badge">
-                <i class="fa-solid fa-circle-nodes"></i>
-            </span>
-            <span>Circle</span>
+        <a class="navbar-brand d-flex align-items-center" href="<?php echo $base_path !== '' ? $base_path . '/' : './'; ?>">
+            <span class="brand-word" aria-label="Circle">C<span class="brand-o" aria-hidden="true"></span>ircle</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#circleNavbar" aria-controls="circleNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

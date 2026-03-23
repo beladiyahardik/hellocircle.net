@@ -119,9 +119,22 @@ if ($base_path === '' || $base_path === '/') {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background: rgba(24, 119, 242, 0.12);
-            border: 1px solid rgba(24, 119, 242, 0.2);
-            color: var(--circle-primary);
+            background: var(--circle-primary);
+        }
+        .brand-word {
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: 0.02em;
+            color: var(--circle-dark);
+        }
+        .brand-o {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid var(--circle-primary);
+            vertical-align: -2px;
+            margin: 0 2px;
         }
     </style>
 </head>

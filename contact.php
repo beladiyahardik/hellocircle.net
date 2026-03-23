@@ -8,7 +8,7 @@ include __DIR__ . '/header.php';
 
 <section class="hero-gradient hero-glow section-padding">
     <div class="container">
-        <p class="tagline">Circle – The private social home for your real life.</p>
+        <p class="tagline">Circle - The private social home for your real life.</p>
         <h1 class="fw-bold"><i class="fa-solid fa-headset text-primary me-2"></i>Let us know what your Circle needs</h1>
         <p class="lead text-muted mt-3">Send a quick note. We are happy to help.</p>
     </div>

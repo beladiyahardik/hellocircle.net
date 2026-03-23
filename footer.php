@@ -7,7 +7,7 @@
         <div class="row gy-4">
             <div class="col-lg-4">
                 <h5 class="fw-bold">Circle</h5>
-                <p class="small text-muted mb-2">Circle – The private social home for your real life.</p>
+                <p class="small text-muted mb-2">Circle - The private social home for your real life.</p>
                 <div class="d-flex gap-3">
                     <a href="#" class="text-muted"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="text-muted"><i class="fa-brands fa-x-twitter"></i></a>
