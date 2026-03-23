@@ -1,16 +1,17 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "*.php", "use": "@vercel/php" }
-  ],
-  "routes": [
-    { "src": "/$", "dest": "/index.php" },
-    { "src": "/about/?$", "dest": "/about.php" },
-    { "src": "/product/?$", "dest": "/product.php" },
-    { "src": "/solution/?$", "dest": "/solution.php" },
-    { "src": "/comparison/?$", "dest": "/comparison.php" },
-    { "src": "/contact/?$", "dest": "/contact.php" },
-    { "src": "/privacy/?$", "dest": "/privacy.php" },
-    { "src": "/(.*)\\.php$", "dest": "/$1.php" }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "*.php": {
+      "runtime": "vercel-php@0.9.0"
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/index.php" },
+    { "source": "/about", "destination": "/about.php" },
+    { "source": "/product", "destination": "/product.php" },
+    { "source": "/solution", "destination": "/solution.php" },
+    { "source": "/comparison", "destination": "/comparison.php" },
+    { "source": "/contact", "destination": "/contact.php" },
+    { "source": "/privacy", "destination": "/privacy.php" }
   ]
 }
