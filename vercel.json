@@ -1,16 +1,16 @@
 {
-  "functions": {
-    "api/*.php": {
-      "runtime": "vercel-php@0.7.3"
-    }
-  },
+  "version": 2,
+  "builds": [
+    { "src": "*.php", "use": "@vercel/php" }
+  ],
   "routes": [
-    { "src": "/$", "dest": "/api/index.php" },
-    { "src": "/about/?$", "dest": "/api/about.php" },
-    { "src": "/product/?$", "dest": "/api/product.php" },
-    { "src": "/solution/?$", "dest": "/api/solution.php" },
-    { "src": "/comparison/?$", "dest": "/api/comparison.php" },
-    { "src": "/contact/?$", "dest": "/api/contact.php" },
-    { "src": "/privacy/?$", "dest": "/api/privacy.php" }
+    { "src": "/$", "dest": "/index.php" },
+    { "src": "/about/?$", "dest": "/about.php" },
+    { "src": "/product/?$", "dest": "/product.php" },
+    { "src": "/solution/?$", "dest": "/solution.php" },
+    { "src": "/comparison/?$", "dest": "/comparison.php" },
+    { "src": "/contact/?$", "dest": "/contact.php" },
+    { "src": "/privacy/?$", "dest": "/privacy.php" },
+    { "src": "/(.*)\\.php$", "dest": "/$1.php" }
   ]
 }
