@@ -1,20 +1,17 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
+﻿{
   "functions": {
     "api/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
   },
-  "redirects": [
-    { "source": "/:path*.php", "destination": "/:path*", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/", "destination": "/api/index.php" },
-    { "source": "/about", "destination": "/api/about.php" },
-    { "source": "/product", "destination": "/api/product.php" },
-    { "source": "/solution", "destination": "/api/solution.php" },
-    { "source": "/comparison", "destination": "/api/comparison.php" },
-    { "source": "/contact", "destination": "/api/contact.php" },
-    { "source": "/privacy", "destination": "/api/privacy.php" }
+  "routes": [
+    { "src": "/(.*)\\.php$", "dest": "/api/$1.php", "status": 301 },
+    { "src": "/$", "dest": "/api/index.php" },
+    { "src": "/about/?$", "dest": "/api/about.php" },
+    { "src": "/product/?$", "dest": "/api/product.php" },
+    { "src": "/solution/?$", "dest": "/api/solution.php" },
+    { "src": "/comparison/?$", "dest": "/api/comparison.php" },
+    { "src": "/contact/?$", "dest": "/api/contact.php" },
+    { "src": "/privacy/?$", "dest": "/api/privacy.php" }
   ]
 }
